@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: var(--font-sans), sans-serif; /* We'll set up --font-sans with Inter later */
+  color: theme('colors.brand-dark');
+  background-color: theme('colors.brand-light');
+}
+
+/* Example of a custom utility class if needed */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: theme('colors.brand-light');
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: theme('colors.brand-primary.DEFAULT');
+  border-radius: 10px;
+  border: 2px solid theme('colors.brand-light');
+}
+
+/* Consistent spacing utilities */
+.section-padding {
+  @apply py-12 md:py-16 lg:py-24;
+}
+
+.container-padding {
+  @apply px-4 sm:px-6 lg:px-8;
+}
+
+/* Consistent text sizing */
+.heading-xl {
+  @apply text-3xl md:text-4xl lg:text-5xl font-bold text-brand-dark;
+}
+
+.heading-lg {
+  @apply text-2xl md:text-3xl font-bold text-brand-dark;
+}
+
+.heading-md {
+  @apply text-xl md:text-2xl font-semibold text-brand-dark;
+}
+
+.paragraph {
+  @apply text-base md:text-lg text-brand-dark;
+}
+
+/* Improved card styling */
+.card {
+  @apply bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg hover:border-brand-primary-200 transition-all duration-300;
+}
+
+.card-hover {
+  @apply hover:shadow-lg hover:border-brand-primary-200 border border-gray-200 transition-all duration-300;
+}
+
+.feature-card {
+  @apply bg-white p-6 rounded-xl shadow-md border border-gray-200 hover:shadow-lg hover:border-brand-primary-200 transition-all duration-300;
+}
+
+/* Enhanced card styles with different backgrounds */
+.card-alt {
+  @apply bg-neutral-bg-alt rounded-lg shadow-md border border-gray-200 hover:shadow-lg hover:border-brand-primary-200 transition-all duration-300;
+}
+
+.card-dark {
+  @apply bg-neutral-bg-dark rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-all duration-300;
+}
+
+/* Form field styling */
+.form-input {
+  @apply w-full p-3 border border-gray-200 rounded-md focus:ring-2 focus:ring-brand-primary-300 focus:border-brand-primary-400 transition-all duration-200 outline-none;
+}
+
+.form-input-error {
+  @apply border-error bg-error-light;
+}
+
+.form-error-text {
+  @apply text-error text-sm mt-1;
+}
+
+/* Button styling */
+.btn {
+  @apply inline-flex justify-center items-center px-6 py-3 rounded-md font-medium shadow-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.btn-primary {
+  @apply btn text-white bg-brand-primary hover:bg-brand-primary-600 focus:ring-brand-primary-400;
+}
+
+.btn-secondary {
+  @apply btn text-white bg-brand-secondary-600 hover:bg-brand-secondary-700 focus:ring-brand-secondary-400;
+}
+
+.btn-accent {
+  @apply btn text-white bg-brand-accent hover:bg-brand-accent-600 focus:ring-brand-accent-400;
+}
+
+.btn-outline-primary {
+  @apply btn bg-transparent border-2 border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white focus:ring-brand-primary-400;
+}
+
+.btn-outline-accent {
+  @apply btn bg-transparent border-2 border-brand-accent text-brand-accent hover:bg-brand-accent hover:text-white focus:ring-brand-accent-400;
+}
+
+/* Gradient backgrounds */
+.bg-gradient-primary {
+  @apply bg-gradient-to-br from-gradient-teal-start to-gradient-teal-end text-white;
+}
+
+.bg-gradient-accent {
+  @apply bg-gradient-to-br from-gradient-turquoise-start to-gradient-turquoise-end text-white;
+}
+
+/* Navigation elements */
+.nav-link {
+  @apply px-3 py-2 rounded-md text-sm font-medium text-brand-dark hover:text-brand-primary hover:bg-brand-primary-50 transition-colors;
+}
+
+.nav-link-active {
+  @apply px-3 py-2 rounded-md text-sm font-medium text-brand-primary bg-brand-secondary-100;
+}
+
+/* Section backgrounds - more subtle */
+.section-light {
+  @apply bg-white;
+}
+
+.section-alt {
+  @apply bg-neutral-bg-alt border-t border-b border-gray-100;
+}
+
+.section-dark-alt {
+  @apply bg-neutral-bg-dark border-t border-b border-gray-100;
+}
+
+.section-dark {
+  @apply bg-brand-primary-700 text-white;
+}
+
+.section-accent {
+  @apply bg-white border-t border-b border-brand-secondary-200;
+}
+
+.section-accent-light {
+  @apply bg-brand-accent-50 border-t border-b border-brand-accent-100;
+}
+
+.section-accent-dark {
+  @apply bg-brand-accent-700 text-white;
+}
+
+.section-gradient {
+  @apply bg-gradient-primary;
+}
+
+.section-gradient-accent {
+  @apply bg-gradient-accent;
+}
+
+/* Fix for mobile overflow issues */
+.overflow-fix {
+  overflow-x: hidden;
+}
+
+/* Icons */
+.icon-circle {
+  @apply p-2 rounded-full bg-brand-secondary-100 text-brand-primary border border-brand-secondary-200 w-8 h-8 flex items-center justify-center;
+}
+
+.icon-circle-accent {
+  @apply p-2 rounded-full bg-brand-accent-50 text-brand-accent border border-brand-accent-100 w-8 h-8 flex items-center justify-center;
+}
+
+/* Responsive image */
+.responsive-img {
+  @apply w-full h-auto object-cover;
+}
+
+/* Hover effects */
+.hover-lift {
+  @apply transition-transform duration-300 hover:-translate-y-1;
+}
+
+.hover-scale {
+  @apply transition-transform duration-300 hover:scale-105;
+}
+
+/* Callout boxes */
+.callout {
+  @apply p-4 rounded-lg border-l-4;
+}
+
+.callout-info {
+  @apply callout bg-info-light border-info;
+}
+
+.callout-success {
+  @apply callout bg-success-light border-success;
+}
+
+.callout-warning {
+  @apply callout bg-warning-light border-warning;
+}
+
+.callout-error {
+  @apply callout bg-error-light border-error;
+}
+
+/* University cards */
+.university-card {
+  @apply bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-brand-primary-200;
+}
+
+.university-card-header {
+  @apply p-6 bg-neutral-bg-alt border-b border-gray-200;
+}
+
+.university-card-body {
+  @apply p-6;
+}
+
+/* Process step */
+.process-step {
+  @apply p-6 rounded-xl bg-white border border-gray-200 shadow-md hover:shadow-lg relative transition-all duration-300;
+}
+
+.process-step-number {
+  @apply bg-brand-accent-50 rounded-full w-8 h-8 flex items-center justify-center mb-4 border border-brand-accent-100 text-sm;
+}
+
+/* Text helper classes */
+.text-body {
+  @apply text-brand-dark;
+}
+
+.text-body-light {
+  @apply text-text-secondary;
+}
+
+.text-body-lighter {
+  @apply text-text-secondary-light;
+}
+
+/* You can uncomment and adjust these heading styles if needed, but prefer Tailwind utilities where possible */
+/*
+h1, h2, h3, h4, h5, h6 {
+ color: theme('colors.brand-primary.DEFAULT');
+}
+*/
+
+/* Testimonial card styling */
+.testimonial-card {
+  @apply bg-white p-6 rounded-lg border border-gray-200 shadow-md hover:shadow-lg transition-all duration-300;
+}

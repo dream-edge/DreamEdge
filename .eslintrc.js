@@ -1,0 +1,13 @@
+module.exports = {
+  extends: [
+    'next/core-web-vitals',
+    'plugin:react/recommended'
+  ],
+  rules: {
+    'react/no-unescaped-entities': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'react/prop-types': 'off',
+    'react-hooks/rules-of-hooks': 'warn',
+    'react/display-name': 'off'
+  }
+} 
