@@ -1,14 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
-import React from "react";
+import { useRouter, useParams } from "next/navigation";
 import FAQForm from "@/components/admin/FAQForm";
 import { PageHeader, LoadingSpinner, ErrorAlert } from "@/components/admin/UI";
 import { getFaqById, updateFaq } from "@/lib/api";
 
-export default function EditFAQPage({ params }) {
-  const id = React.use(params).id;
+export default function EditFAQPage() {
+  const params = useParams();
+  const id = params?.id;
   const router = useRouter();
   const [faq, setFaq] = useState(null);
   const [loading, setLoading] = useState(true);

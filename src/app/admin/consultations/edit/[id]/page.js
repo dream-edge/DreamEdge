@@ -1,13 +1,13 @@
 "use client";
 
-import { useEffect, useState, use } from "react";
+import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { getConsultationById, updateConsultation } from "@/lib/api";
 import { format } from 'date-fns';
 
 const EditConsultationPage = () => {
   const router = useRouter();
-  const params = use(useParams());
+  const params = useParams();
   const id = params?.id;
 
   const [consultation, setConsultation] = useState(null);

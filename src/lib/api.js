@@ -32,6 +32,7 @@ export const submitContactForm = async (formData) => {
  */
 export const bookConsultation = async (formData) => {
   try {
+    // Save to database
     const { data, error } = await supabase
       .from('consultations')
       .insert([
@@ -52,6 +53,24 @@ export const bookConsultation = async (formData) => {
       .select();
 
     if (error) throw error;
+    
+    // Send email notification (don't block on this - run in background)
+    try {
+      await fetch('/api/send-consultation-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          preferred_location: formData.preferred_location || 'online'
+        }),
+      });
+    } catch (emailError) {
+      // Log email error but don't fail the booking
+      console.error('Failed to send email notification:', emailError);
+    }
+    
     return { success: true, data };
   } catch (error) {
     console.error('Error booking consultation:', error);
@@ -72,6 +91,11 @@ export const getFaqs = async (filters = {}) => {
     // Filter by category if provided
     if (filters.category && filters.category !== 'all') {
       query = query.eq('category', filters.category);
+    }
+
+    // Filter by country - include general FAQs for all countries
+    if (filters.country && filters.country !== 'all') {
+      query = query.or(`country.eq.${filters.country},country.eq.general`);
     }
 
     if (filters.limit) {

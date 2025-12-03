@@ -21,6 +21,7 @@ const FAQForm = ({ faq, onSubmit, isLoading, error, success }) => {
     question: "",
     answer: "",
     category: "general",
+    country: "general",
     display_order: "",
   });
 
@@ -31,6 +32,7 @@ const FAQForm = ({ faq, onSubmit, isLoading, error, success }) => {
         question: faq.question || "",
         answer: faq.answer || "",
         category: faq.category || "general",
+        country: faq.country || "general",
         display_order: faq.display_order?.toString() || "",
       });
     }
@@ -64,10 +66,22 @@ const FAQForm = ({ faq, onSubmit, isLoading, error, success }) => {
     { value: "general", label: "General" },
     { value: "application", label: "Application Process" },
     { value: "visa", label: "Visa & Immigration" },
-    { value: "studying", label: "Studying in the UK" },
+    { value: "studying", label: "Studying Abroad" },
     { value: "costs", label: "Costs & Funding" },
     { value: "accommodation", label: "Accommodation" },
     { value: "test_preparation", label: "Test Preparation" },
+  ];
+
+  // Countries for FAQ filtering
+  const countries = [
+    { value: "general", label: "General (All Countries)" },
+    { value: "uk", label: "United Kingdom" },
+    { value: "usa", label: "United States" },
+    { value: "canada", label: "Canada" },
+    { value: "australia", label: "Australia" },
+    { value: "newzealand", label: "New Zealand" },
+    { value: "europe", label: "Europe" },
+    { value: "japan", label: "Japan" },
   ];
 
   return (
@@ -116,7 +130,25 @@ const FAQForm = ({ faq, onSubmit, isLoading, error, success }) => {
           />
         </FormGroup>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <FormGroup>
+            <Label htmlFor="country">
+              Country
+            </Label>
+            <Select
+              id="country"
+              name="country"
+              value={formData.country}
+              onChange={handleChange}
+            >
+              {countries.map((country) => (
+                <option key={country.value} value={country.value}>
+                  {country.label}
+                </option>
+              ))}
+            </Select>
+          </FormGroup>
+
           <FormGroup>
             <Label htmlFor="category">
               Category

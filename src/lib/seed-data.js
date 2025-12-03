@@ -26,71 +26,237 @@ const insertData = async (tableName, data, onConflictColumn = null) => {
 // Seed FAQs
 const seedFaqs = async () => {
   const faqs = [
+    // General FAQs (applicable to all countries)
     {
       question: "What qualifications do I need to study abroad?",
       answer: "Requirements vary significantly by country, university, and program. Generally, you'll need relevant academic qualifications (e.g., high school diploma, bachelor's degree with good grades), English language proficiency (e.g., IELTS, TOEFL for English-speaking countries), and sometimes program-specific entrance exams or portfolios.",
       category: "application",
+      country: "general",
       display_order: 1
     },
     {
-      question: "How much does it cost to study internationally?",
-      answer: "Costs vary widely. Tuition fees can range from being free or very low in some European countries to tens of thousands of dollars per year in countries like the USA or Australia. Living expenses also differ greatly by city and country. Research specific destinations for accurate estimates.",
-      category: "general",
-      display_order: 2
-    },
-    {
-      question: "Can I work while studying abroad?",
-      answer: "Work rights for international students depend on the country's visa regulations. Many countries (e.g., Canada, Australia, UK, Germany) allow part-time work during studies (often up to 20 hours/week) and full-time during breaks. Always check the specific visa conditions for your destination.",
-      category: "visa",
-      display_order: 3
-    },
-    {
-      question: "How does Dream Consultancy help with the visa application process?",
+      question: "How does Dream Edge help with the visa application process?",
       answer: "We provide comprehensive visa assistance including document preparation, application review, mock interview preparation, and guidance throughout the entire process for various countries. Our experienced team aims to maximize your chances of success.",
       category: "visa",
-      display_order: 4
-    },
-    {
-      question: "What scholarship opportunities are available for international students?",
-      answer: "Numerous scholarships are available globally, including government-funded scholarships (e.g., Fulbright, Chevening, DAAD), university-specific scholarships, and private organization awards. Many universities offer merit-based scholarships that can cover a portion of tuition fees.",
-      category: "application",
-      display_order: 5
-    },
-    {
-      question: "When should I start my application process for international universities?",
-      answer: "We recommend starting at least 12-18 months before your intended start date, as application timelines vary greatly. For example, US university applications can be due much earlier than those for some European countries. Research deadlines for your target countries and universities.",
-      category: "application",
-      display_order: 6
-    },
-    {
-      question: "What accommodation options are available for students abroad?",
-      answer: "Common options include university halls of residence (dormitories), private student accommodation (often purpose-built), private rentals (apartments/houses), and homestays. Availability and cost vary by location and institution.",
-      category: "accommodation",
-      display_order: 7
-    },
-    {
-      question: "What support services do you provide after I receive my visa?",
-      answer: "Our support continues beyond visa approval. We provide comprehensive pre-departure briefings covering aspects of your destination country like culture, weather, education system, banking, transportation, and essential items to pack. We also offer guidance on accommodation and airport pickup coordination where possible.",
-      category: "general",
-      display_order: 8
+      country: "general",
+      display_order: 2
     },
     {
       question: "Which English proficiency tests are generally accepted by international universities?",
       answer: "Most English-speaking universities accept IELTS Academic, TOEFL iBT, and Pearson PTE Academic. Some may also accept Cambridge English qualifications or Duolingo. Always check the specific requirements of your chosen university and course, and country visa requirements.",
       category: "test_preparation",
-      display_order: 9
+      country: "general",
+      display_order: 3
     },
     {
-      question: "What is a good IELTS score for international universities?",
-      answer: "This varies. Generally, a minimum overall IELTS Academic score of 6.0 to 6.5 is required for undergraduate courses, and 6.5 to 7.0 for postgraduate courses in English-speaking countries. Highly competitive universities/courses may require higher scores.",
-      category: "test_preparation",
+      question: "What support services do you provide after I receive my visa?",
+      answer: "Our support continues beyond visa approval. We provide comprehensive pre-departure briefings covering aspects of your destination country like culture, weather, education system, banking, transportation, and essential items to pack. We also offer guidance on accommodation and airport pickup coordination where possible.",
+      category: "general",
+      country: "general",
+      display_order: 4
+    },
+
+    // UK-specific FAQs
+    {
+      question: "What are the tuition fees for studying in the UK?",
+      answer: "UK tuition fees for international students typically range from £10,000 to £38,000 per year, depending on the university and course. Undergraduate courses average £15,000-£25,000 annually, while postgraduate courses range from £12,000-£30,000. Medical and MBA programs can be higher.",
+      category: "costs",
+      country: "uk",
       display_order: 10
     },
     {
-      question: "How long is an IELTS/TOEFL score valid?",
-      answer: "Both IELTS and TOEFL scores are generally valid for two years from the test date. Ensure your scores are valid when you apply to universities and for your visa.",
-      category: "test_preparation",
+      question: "Can I work while studying in the UK?",
+      answer: "Yes, international students on a Student visa can work up to 20 hours per week during term time and full-time during holidays. However, you cannot be self-employed or work as a professional sportsperson or entertainer.",
+      category: "visa",
+      country: "uk",
       display_order: 11
+    },
+    {
+      question: "How long can I stay in the UK after graduation?",
+      answer: "The UK Graduate Route allows international students to stay for 2 years after completing a bachelor's or master's degree (3 years for PhD graduates) to work or look for work at any skill level without requiring sponsorship.",
+      category: "visa",
+      country: "uk",
+      display_order: 12
+    },
+    {
+      question: "What is the minimum IELTS score required for UK universities?",
+      answer: "Most UK universities require an overall IELTS score of 6.0-7.0 for undergraduate courses and 6.5-7.5 for postgraduate courses. Top universities like Oxford and Cambridge often require 7.0-7.5 overall with no component below 6.5-7.0.",
+      category: "application",
+      country: "uk",
+      display_order: 13
+    },
+
+    // USA-specific FAQs
+    {
+      question: "How much does it cost to study in the USA?",
+      answer: "Tuition fees in the USA vary widely. Public universities charge $20,000-$35,000 per year for international students, while private universities can cost $35,000-$60,000+ annually. Additionally, living expenses range from $10,000-$18,000 per year depending on the city.",
+      category: "costs",
+      country: "usa",
+      display_order: 20
+    },
+    {
+      question: "Can I work while studying in the USA?",
+      answer: "F-1 visa holders can work on-campus up to 20 hours per week during the academic year and full-time during breaks. After completing one academic year, you may be eligible for Curricular Practical Training (CPT) and Optional Practical Training (OPT) for off-campus work.",
+      category: "visa",
+      country: "usa",
+      display_order: 21
+    },
+    {
+      question: "What is OPT and how long can I work after graduation in the USA?",
+      answer: "Optional Practical Training (OPT) allows F-1 students to work in their field of study for up to 12 months after graduation. STEM degree holders can apply for a 24-month extension, totaling 36 months of work authorization.",
+      category: "visa",
+      country: "usa",
+      display_order: 22
+    },
+    {
+      question: "What are SAT/GRE requirements for US universities?",
+      answer: "Many US undergraduate programs require SAT or ACT scores, though test-optional policies are increasingly common. Graduate programs often require GRE (or GMAT for business). Requirements vary by institution, so check specific university requirements.",
+      category: "application",
+      country: "usa",
+      display_order: 23
+    },
+
+    // Canada-specific FAQs
+    {
+      question: "How much does it cost to study in Canada?",
+      answer: "Canadian tuition fees for international students average CAD 20,000-30,000 per year for undergraduate programs and CAD 15,000-35,000 for postgraduate programs. Living expenses range from CAD 10,000-15,000 annually depending on the province.",
+      category: "costs",
+      country: "canada",
+      display_order: 30
+    },
+    {
+      question: "Can I work while studying in Canada?",
+      answer: "Yes, international students with a valid study permit can work up to 20 hours per week off-campus during academic sessions and full-time during scheduled breaks. You can also work unlimited hours on-campus.",
+      category: "visa",
+      country: "canada",
+      display_order: 31
+    },
+    {
+      question: "What is the Post-Graduation Work Permit (PGWP) in Canada?",
+      answer: "The PGWP allows international students who graduate from eligible Canadian institutions to work in Canada for up to 3 years. The permit length depends on your program duration (8 months to 3 years). This experience can help you qualify for permanent residence.",
+      category: "visa",
+      country: "canada",
+      display_order: 32
+    },
+    {
+      question: "Which provinces in Canada are best for international students?",
+      answer: "Ontario (Toronto, Ottawa) and British Columbia (Vancouver) are popular for their universities and job opportunities. Quebec (Montreal) offers French-language programs and lower tuition. Alberta and Manitoba are growing destinations with good immigration pathways.",
+      category: "general",
+      country: "canada",
+      display_order: 33
+    },
+
+    // Australia-specific FAQs
+    {
+      question: "How much does it cost to study in Australia?",
+      answer: "Australian tuition fees range from AUD 20,000-45,000 per year for undergraduate courses and AUD 22,000-50,000 for postgraduate courses. Living expenses average AUD 21,000-27,000 annually. Total costs depend on the city and lifestyle.",
+      category: "costs",
+      country: "australia",
+      display_order: 40
+    },
+    {
+      question: "Can I work while studying in Australia?",
+      answer: "Yes, student visa holders can work up to 48 hours per fortnight during the academic term and unlimited hours during scheduled breaks. This allows you to support yourself financially while gaining valuable work experience.",
+      category: "visa",
+      country: "australia",
+      display_order: 41
+    },
+    {
+      question: "What are the post-study work options in Australia?",
+      answer: "The Temporary Graduate visa (subclass 485) allows you to work in Australia after graduation. Post-Study Work stream offers 2-4 years depending on your qualification level (bachelor's, master's, or PhD). This can lead to permanent residence pathways.",
+      category: "visa",
+      country: "australia",
+      display_order: 42
+    },
+    {
+      question: "What is the Group of Eight (Go8) in Australia?",
+      answer: "The Group of Eight is an alliance of Australia's leading research-intensive universities: Australian National University, University of Melbourne, University of Sydney, University of Queensland, University of Western Australia, University of Adelaide, Monash University, and UNSW Sydney.",
+      category: "general",
+      country: "australia",
+      display_order: 43
+    },
+
+    // New Zealand-specific FAQs
+    {
+      question: "How much does it cost to study in New Zealand?",
+      answer: "Tuition fees in New Zealand range from NZD 22,000-32,000 per year for undergraduate programs and NZD 26,000-37,000 for postgraduate programs. Living expenses average NZD 15,000-27,000 annually. New Zealand offers quality education at competitive prices.",
+      category: "costs",
+      country: "newzealand",
+      display_order: 50
+    },
+    {
+      question: "Can I work while studying in New Zealand?",
+      answer: "Yes, full-time students can work up to 20 hours per week during the academic year and full-time during scheduled holidays. PhD and research master's students can work unlimited hours.",
+      category: "visa",
+      country: "newzealand",
+      display_order: 51
+    },
+    {
+      question: "What is the Post-Study Work Visa in New Zealand?",
+      answer: "Graduates can apply for a Post-Study Work Visa allowing 1-3 years of work in New Zealand depending on qualification level and study location. Bachelor's degrees offer 3 years, postgraduate diplomas 2 years, and other qualifications 1 year.",
+      category: "visa",
+      country: "newzealand",
+      display_order: 52
+    },
+
+    // Europe-specific FAQs
+    {
+      question: "Can I study for free in Europe?",
+      answer: "Several European countries offer free or very low tuition for international students, including Germany, Norway, and Finland (for most programs). Other countries like France and Austria have low tuition fees (€200-€3,000 annually). Always verify current policies.",
+      category: "costs",
+      country: "europe",
+      display_order: 60
+    },
+    {
+      question: "Can I work while studying in European countries?",
+      answer: "Most European countries allow international students to work 15-20 hours per week during studies. Germany allows 120 full days or 240 half days per year. France allows up to 964 hours annually. Rules vary by country, so check specific regulations.",
+      category: "visa",
+      country: "europe",
+      display_order: 61
+    },
+    {
+      question: "Do I need to learn the local language to study in Europe?",
+      answer: "Many European universities offer programs taught entirely in English, especially at the master's level. However, learning the local language can enhance your experience and job prospects. Some countries like Germany offer free language courses to students.",
+      category: "general",
+      country: "europe",
+      display_order: 62
+    },
+    {
+      question: "What is the Schengen visa and how does it relate to student visas?",
+      answer: "The Schengen Area allows free movement across 27 European countries. Student visas (Type D/national visas) for Schengen countries typically allow you to travel within the Schengen Area for up to 90 days in any 180-day period while studying.",
+      category: "visa",
+      country: "europe",
+      display_order: 63
+    },
+
+    // Japan-specific FAQs
+    {
+      question: "How much does it cost to study in Japan?",
+      answer: "Tuition fees in Japan range from ¥535,800 (approximately $4,000) per year at national universities to ¥800,000-1,500,000 ($6,000-$11,000) at private universities. Living expenses in Tokyo average ¥100,000-150,000 ($750-$1,100) per month.",
+      category: "costs",
+      country: "japan",
+      display_order: 70
+    },
+    {
+      question: "Can I work while studying in Japan?",
+      answer: "Yes, international students can work up to 28 hours per week with permission from immigration authorities. During long vacations, you can work up to 8 hours per day. Many students work part-time to support their living expenses.",
+      category: "visa",
+      country: "japan",
+      display_order: 71
+    },
+    {
+      question: "Do I need to speak Japanese to study in Japan?",
+      answer: "While many programs (especially undergraduate) are taught in Japanese, an increasing number of English-taught programs are available, particularly at the graduate level. Learning Japanese will greatly enhance your experience and job opportunities in Japan.",
+      category: "general",
+      country: "japan",
+      display_order: 72
+    },
+    {
+      question: "What are the post-graduation work opportunities in Japan?",
+      answer: "After graduation, you can change your visa status to a work visa if you find employment. Many Japanese companies actively recruit international graduates. The job-hunting visa allows you to stay for up to 1 year after graduation to look for work.",
+      category: "visa",
+      country: "japan",
+      display_order: 73
     }
   ];
   

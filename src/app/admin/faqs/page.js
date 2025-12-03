@@ -103,6 +103,7 @@ export default function FAQsPage() {
         <Table>
           <TableHead>
             <TableHeadCell>Question</TableHeadCell>
+            <TableHeadCell>Country</TableHeadCell>
             <TableHeadCell>Category</TableHeadCell>
             <TableHeadCell>Order</TableHeadCell>
             <TableHeadCell>Actions</TableHeadCell>
@@ -110,7 +111,7 @@ export default function FAQsPage() {
           <TableBody>
             {faqs.length === 0 ? (
               <TableRow>
-                <TableCell colSpan="4" className="text-center py-10">
+                <TableCell colSpan="5" className="text-center py-10">
                   No FAQs found. Create your first FAQ.
                 </TableCell>
               </TableRow>
@@ -121,6 +122,11 @@ export default function FAQsPage() {
                     {faq.question.length > 60 
                       ? `${faq.question.substring(0, 60)}...` 
                       : faq.question}
+                  </TableCell>
+                  <TableCell>
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                      {faq.country === "general" ? "All" : faq.country?.toUpperCase() || "All"}
+                    </span>
                   </TableCell>
                   <TableCell>{faq.category || "General"}</TableCell>
                   <TableCell>{faq.display_order || "-"}</TableCell>

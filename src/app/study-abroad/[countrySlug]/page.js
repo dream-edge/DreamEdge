@@ -6,7 +6,8 @@ import { ChevronRightIcon } from '@/components/icons/CommonIcons';
 import CountryHeroImage from '@/components/CountryHeroImage';
 
 export async function generateMetadata({ params }) {
-  const { data: destination } = await getStudyDestinationBySlug(params.countrySlug);
+  const { countrySlug } = await params;
+  const { data: destination } = await getStudyDestinationBySlug(countrySlug);
   
   if (!destination) {
     return {
@@ -22,7 +23,8 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function CountryPage({ params }) {
-  const { data: destination, success, notFound: destinationNotFound } = await getStudyDestinationBySlug(params.countrySlug);
+  const { countrySlug } = await params;
+  const { data: destination, success, notFound: destinationNotFound } = await getStudyDestinationBySlug(countrySlug);
   
   if (!success || destinationNotFound) {
     return notFound();

@@ -18,17 +18,32 @@ const fadeInUp = {
 
 export default function FAQ() {
   const [faqs, setFaqs] = useState([]);
+  const [activeCountry, setActiveCountry] = useState('all');
   const [activeCategory, setActiveCategory] = useState('all');
   const [activeIndex, setActiveIndex] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const countries = [
+    { id: 'all', name: 'All Countries', flag: '🌍' },
+    { id: 'general', name: 'General', flag: '📚' },
+    { id: 'uk', name: 'United Kingdom', flag: '🇬🇧' },
+    { id: 'usa', name: 'United States', flag: '🇺🇸' },
+    { id: 'canada', name: 'Canada', flag: '🇨🇦' },
+    { id: 'australia', name: 'Australia', flag: '🇦🇺' },
+    { id: 'newzealand', name: 'New Zealand', flag: '🇳🇿' },
+    { id: 'europe', name: 'Europe', flag: '🇪🇺' },
+    { id: 'japan', name: 'Japan', flag: '🇯🇵' },
+  ];
+
   const categories = [
-    { id: 'all', name: 'All FAQs' },
+    { id: 'all', name: 'All Topics' },
     { id: 'visa', name: 'Visa & Immigration' },
     { id: 'application', name: 'Application Process' },
     { id: 'accommodation', name: 'Accommodation' },
-    { id: 'general', name: 'General Questions' },
+    { id: 'costs', name: 'Costs & Funding' },
+    { id: 'studying', name: 'Studying Abroad' },
+    { id: 'general', name: 'General' },
   ];
 
   useEffect(() => {
@@ -37,7 +52,11 @@ export default function FAQ() {
       setError(null);
       
       try {
-        const result = await getFaqs(activeCategory);
+        const filters = {};
+        if (activeCountry !== 'all') filters.country = activeCountry;
+        if (activeCategory !== 'all') filters.category = activeCategory;
+        
+        const result = await getFaqs(filters);
         
         if (result.success) {
           setFaqs(result.data || []);
@@ -53,7 +72,7 @@ export default function FAQ() {
     };
     
     loadFaqs();
-  }, [activeCategory]);
+  }, [activeCountry, activeCategory]);
 
   const toggleFaq = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -73,7 +92,7 @@ export default function FAQ() {
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Frequently Asked Questions</h1>
             <p className="text-lg md:text-xl">
-              Find answers to common questions about studying in the UK, visa applications, and our services.
+              Find answers to common questions about studying abroad, visa applications, and our services across multiple destinations.
             </p>
           </motion.div>
         </div>
@@ -83,13 +102,45 @@ export default function FAQ() {
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
+            {/* Country Filter */}
+            <div className="mb-8">
+              <h3 className="text-center text-sm font-semibold text-gray-500 mb-4 uppercase tracking-wide">
+                Select Country
+              </h3>
+              <div className="flex flex-wrap gap-2 justify-center">
+                {countries.map((country) => (
+                  <button
+                    key={country.id}
+                    onClick={() => {
+                      setActiveCountry(country.id);
+                      setActiveIndex(null);
+                    }}
+                    className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                      activeCountry === country.id
+                        ? "bg-brand-primary text-white"
+                        : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                    }`}
+                  >
+                    <span className="mr-1">{country.flag}</span>
+                    {country.name}
+                  </button>
+                ))}
+              </div>
+            </div>
+
             {/* Category Filter */}
             <div className="mb-12">
+              <h3 className="text-center text-sm font-semibold text-gray-500 mb-4 uppercase tracking-wide">
+                Filter by Topic
+              </h3>
               <div className="flex flex-wrap gap-2 justify-center">
                 {categories.map((category) => (
                   <button
                     key={category.id}
-                    onClick={() => setActiveCategory(category.id)}
+                    onClick={() => {
+                      setActiveCategory(category.id);
+                      setActiveIndex(null);
+                    }}
                     className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                       activeCategory === category.id
                         ? "bg-brand-primary text-white"

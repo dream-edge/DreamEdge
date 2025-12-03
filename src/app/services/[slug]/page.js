@@ -36,7 +36,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const { slug } = params;
+  const { slug } = await params;
   const response = await getServiceBySlug(slug);
 
   if (!response.success || !response.data) {
@@ -58,7 +58,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function ServiceDetailPage({ params }) {
-  const { slug } = params;
+  const { slug } = await params;
   
   const response = await getServiceBySlug(slug);
 
