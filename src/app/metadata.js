@@ -2,9 +2,9 @@ import { getSiteSettings } from "@/lib/api";
 
 // This function will be used by Next.js for dynamic metadata generation
 export async function generateMetadata() {
-  let siteName = "Dream Consultancy"; // Default site name
-  const defaultTitle = `${siteName} - Your Future Starts Here`;
-  const description = "Expert guidance for Nepali students aspiring to study in the UK. University selection, test preparation, visa assistance, and more.";
+  let siteName = "Dream Edge"; // Default site name
+  const defaultTitle = `${siteName} - Study Abroad from Nepal`;
+  const description = "Dream Edge: Professional education consultancy in Nepal. Expert guidance for studying abroad in Europe, Australia, New Zealand, USA, Canada, UK & Japan. Study abroad Nepal, overseas education consultancy, student visa assistance.";
 
   try {
     const apiResponse = await getSiteSettings();
@@ -37,6 +37,6 @@ export async function generateMetadata() {
 
 // Default metadata export
 export const metadata = {
-  title: "Dream Consultancy - Your Future Starts Here",
-  description: "Expert guidance for Nepali students aspiring to study in the UK. University selection, test preparation, visa assistance, and more.",
+  title: "Dream Edge - Study Abroad from Nepal",
+  description: "Dream Edge: Professional education consultancy in Nepal. Expert guidance for studying abroad in Europe, Australia, New Zealand, USA, Canada, UK & Japan. Study abroad Nepal, overseas education consultancy, student visa assistance.",
 }; 

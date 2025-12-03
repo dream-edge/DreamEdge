@@ -75,13 +75,13 @@ export default function StudyAbroadPage() {
             className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight"
             variants={fadeInUp} initial="initial" animate="animate"
           >
-            Embark on Your International Education Adventure
+            Study Abroad from Nepal - Europe, Australia, New Zealand, USA, Canada, UK & Japan
           </motion.h1>
           <motion.p 
             className="text-lg md:text-xl mb-10 max-w-3xl mx-auto text-blue-100"
             variants={fadeInUp} initial="initial" animate="animate" custom={0.2}
           >
-            Explore world-class universities, diverse cultures, and gain a globally recognized qualification. Your journey to studying abroad starts here.
+            Dream Edge guides Nepali students to world-class universities across the globe. Explore top destinations, diverse cultures, and gain globally recognized qualifications with our expert overseas education consultancy.
           </motion.p>
           <motion.div
             variants={fadeInUp} initial="initial" animate="animate" custom={0.4}

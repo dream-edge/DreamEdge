@@ -32,11 +32,11 @@ export default function Footer() {
           console.error("Failed to load site settings for footer or data is null/invalid:", apiResponse?.error);
           // Use fallback/default data if settings fail to load or response is not as expected
           setSettings({
-            site_name: 'Dream Consultancy',
+            site_name: 'Dream Edge',
             primary_phone: 'N/A',
             primary_email: 'N/A',
-            primary_address_line1: 'Kamalpokhari, Kathmandu, Nepal',
-            footer_about_text: 'Guiding students towards their global education dreams. We provide expert counselling, application support, and test preparation.',
+            primary_address_line1: 'Kathmandu, Nepal',
+            footer_about_text: 'Dream Edge is Nepal\'s trusted overseas education consultancy, helping students study abroad in Europe, Australia, New Zealand, USA, Canada, UK & Japan. Expert guidance for university admissions, student visa assistance, and test preparation.',
             copyright_year_start: null, 
             facebook_url: '#',
             instagram_url: '#',
@@ -48,11 +48,11 @@ export default function Footer() {
         console.error("Failed to load site settings for footer:", error);
         // Use fallback/default data if settings fail to load
         setSettings({
-          site_name: 'Dream Consultancy',
+          site_name: 'Dream Edge',
           primary_phone: 'N/A',
           primary_email: 'N/A',
-          primary_address_line1: 'Kamalpokhari, Kathmandu, Nepal',
-          footer_about_text: 'Guiding students towards their global education dreams. We provide expert counselling, application support, and test preparation.',
+          primary_address_line1: 'Kathmandu, Nepal',
+          footer_about_text: 'Dream Edge is Nepal\'s trusted overseas education consultancy, helping students study abroad in Europe, Australia, New Zealand, USA, Canada, UK & Japan. Expert guidance for university admissions, student visa assistance, and test preparation.',
           copyright_year_start: null, // Will default to current year if null
           facebook_url: '#',
           instagram_url: '#',
@@ -107,10 +107,10 @@ export default function Footer() {
           {/* Column 1: About & Logo */}
           <div>
             <h3 className="text-xl font-bold text-white mb-4">
-              {settings?.site_name || 'Dream Consultancy'}
+              {settings?.site_name || 'Dream Edge'}
             </h3>
             <p className="text-sm text-brand-secondary-200 mb-6 leading-relaxed">
-              {settings?.footer_about_text || 'Fallback about text if not loaded.'}
+              {settings?.footer_about_text || 'Dream Edge - Study abroad from Nepal with expert guidance.'}
             </p>
             {socialMediaLinks.length > 0 && (
               <div className="flex space-x-5">
@@ -172,7 +172,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-brand-primary-700 pt-6 text-center text-sm text-brand-secondary-300">
-          <p>&copy; {copyrightText} {settings?.site_name || 'Dream Consultancy'}. All Rights Reserved.</p>
+          <p>&copy; {copyrightText} {settings?.site_name || 'Dream Edge'}. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

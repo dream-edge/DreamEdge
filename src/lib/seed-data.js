@@ -118,60 +118,60 @@ const seedServices = async () => {
     {
       name: "Student Visa Consultancy",
       slug: "visa-consultancy",
-      short_description: "Streamlined student visa application process for various countries",
-      full_description: "Our visa consultancy service provides comprehensive support throughout the student visa application process for popular destinations like the USA, Canada, Australia, UK, and Europe. We help prepare documents, review applications, and coach students for visa interviews to maximize the chances of approval.",
+      short_description: "Expert student visa assistance for USA, UK, Canada, Australia, Europe, New Zealand & Japan",
+      full_description: "Our visa consultancy service provides comprehensive support throughout the student visa application process for Europe, Australia, New Zealand, USA, Canada, UK, and Japan. We understand the unique requirements of each country's visa process and help prepare complete documentation, review applications thoroughly, and coach students for visa interviews to maximize approval chances. From F-1 visas for USA to Tier 4 for UK, student permits for Canada, and visa types for all our destination countries.",
       icon_name: "document-text",
       benefits: JSON.stringify([
-        "Country-specific document preparation guidance",
-        "Application review by experienced consultants for various visa types",
-        "Mock visa interview sessions tailored to destination country",
-        "Financial documentation assistance as per country requirements",
-        "Guidance on proof of accommodation and travel insurance"
+        "Country-specific document preparation for USA, UK, Canada, Australia, Europe, New Zealand & Japan",
+        "Application review by experienced consultants specializing in multiple countries",
+        "Mock visa interview sessions tailored to each destination country's requirements",
+        "Financial documentation assistance meeting different country standards",
+        "Guidance on proof of accommodation, travel insurance, and country-specific requirements"
       ]),
       display_order: 2
     },
     {
       name: "Scholarship Guidance",
       slug: "scholarship-guidance",
-      short_description: "Identifying and securing global financial aid opportunities",
-      full_description: "Our scholarship guidance service helps students identify and apply for financial aid opportunities at universities worldwide. We provide personalized guidance on eligibility criteria, application procedures, and essay preparation for international scholarships.",
+      short_description: "Securing scholarships & financial aid for studying in USA, UK, Canada, Australia, Europe, New Zealand & Japan",
+      full_description: "Our scholarship guidance service helps students identify and apply for financial aid opportunities at universities across Europe, Australia, New Zealand, USA, Canada, UK, and Japan. We provide personalized guidance on eligibility criteria for country-specific scholarships, government-funded programs (like Fulbright, Chevening, DAAD, MEXT), university scholarships, and application procedures for various international funding opportunities.",
       icon_name: "currency-dollar",
       benefits: JSON.stringify([
-        "Access to a global scholarship database",
-        "Eligibility assessment for various international scholarships",
-        "Application preparation assistance for different funding bodies",
-        "Essay review and improvement for scholarship applications",
-        "Interview coaching for scholarship selection panels"
+        "Access to scholarships database for USA, UK, Canada, Australia, Europe, New Zealand & Japan",
+        "Eligibility assessment for country-specific and international scholarships",
+        "Application preparation for Fulbright, Chevening, DAAD, MEXT, and university scholarships",
+        "Essay review and improvement for competitive scholarship applications",
+        "Interview coaching for scholarship selection panels across different countries"
       ]),
       display_order: 3
     },
     {
       name: "Test Preparation",
       slug: "test-preparation",
-      short_description: "Expert coaching for IELTS, TOEFL, PTE, GRE, GMAT and other entrance exams",
-      full_description: "Our test preparation programs are designed to help students achieve their target scores on English proficiency exams (IELTS, TOEFL, PTE) and standardized tests (GRE, GMAT) required for international university admissions. We offer personalized coaching, practice materials, and mock tests.",
+      short_description: "Expert IELTS, TOEFL, PTE, GRE, GMAT coaching for studying abroad",
+      full_description: "Our test preparation programs help students achieve target scores on English proficiency exams (IELTS, TOEFL, PTE) and standardized tests (GRE, GMAT, SAT) required for university admissions in USA, UK, Canada, Australia, Europe, New Zealand, and Japan. We offer expert coaching, personalized study plans, practice materials, and mock tests to ensure you meet admission requirements for your chosen destination.",
       icon_name: "pencil",
       benefits: JSON.stringify([
-        "Expert instructors with proven track records for various tests",
-        "Personalized study plans tailored to individual needs",
-        "Regular practice tests and evaluations for different exam formats",
-        "Focused strategies for each test section",
-        "Extensive study materials and resources for global tests"
+        "Expert instructors with proven track records in IELTS, TOEFL, PTE, GRE, GMAT",
+        "Personalized study plans meeting requirements for different countries",
+        "Regular practice tests and evaluations for all major exam formats",
+        "Score improvement strategies for each test section",
+        "Extensive study materials covering requirements for USA, UK, Canada, Australia, Europe, New Zealand & Japan"
       ]),
       display_order: 4
     },
     {
       name: "Pre-Departure Briefing",
       slug: "pre-departure-briefing",
-      short_description: "Comprehensive preparation for life abroad",
-      full_description: "Our pre-departure briefing prepares students for life in their chosen study destination, covering important aspects such as local culture, weather, education system, accommodation, banking, transportation, and healthcare.",
+      short_description: "Comprehensive preparation for life in USA, UK, Canada, Australia, Europe, New Zealand & Japan",
+      full_description: "Our pre-departure briefing prepares students for life in their chosen study destination across Europe, Australia, New Zealand, USA, Canada, UK, or Japan. We cover important aspects including local culture, weather conditions, education system expectations, accommodation options, banking procedures, transportation systems, healthcare access, and safety guidelines specific to each country.",
       icon_name: "airplane",
       benefits: JSON.stringify([
-        "Country-specific cultural adaptation guidance",
-        "Practical advice on what to pack for your destination",
-        "Information on banking and transportation in your new city",
-        "Healthcare system orientation for your study country",
-        "Emergency contact procedures and safety tips"
+        "Country-specific cultural adaptation guidance for your destination",
+        "Practical packing advice tailored to your study country's climate and culture",
+        "Banking, SIM cards, and transportation setup information for USA, UK, Canada, Australia, Europe, New Zealand & Japan",
+        "Healthcare system orientation and insurance guidance for your study country",
+        "Emergency contacts, safety tips, and local laws awareness for each destination"
       ]),
       display_order: 5
     }
@@ -186,9 +186,9 @@ const seedTestimonials = async () => {
     {
       name: "Anisha Sharma",
       photo_url: "https://randomuser.me/api/portraits/women/32.jpg",
-      quote: "Dream Consultancy guided me through every step of my UK university application. I'm now studying at the University of Manchester and couldn't be happier with the support I received.",
+      quote: "Dream Edge guided me through every step of my university application process. From selecting the right university to preparing documents and visa application, their support was exceptional. I'm now studying at the University of Manchester, UK!",
       program: "MSc International Business",
-      university: "University of Manchester",
+      university: "University of Manchester, UK",
       category: "University Application",
       status: "published"
     },
@@ -204,19 +204,46 @@ const seedTestimonials = async () => {
     {
       name: "Smriti Thapa",
       photo_url: "https://randomuser.me/api/portraits/women/66.jpg",
-      quote: "The visa guidance was invaluable. My application was approved without any issues, and I'm now enjoying my studies in London. Thank you Dream Consultancy!",
+      quote: "The student visa guidance from Dream Edge was invaluable. They helped me prepare all documents perfectly and my UK student visa was approved without any issues. Now I'm enjoying my studies at King's College London!",
       program: "BA Media and Communications",
-      university: "King's College London",
+      university: "King's College London, UK",
       category: "Visa Guidance",
       status: "published"
     },
     {
       name: "Nishant KC",
       photo_url: "https://randomuser.me/api/portraits/men/22.jpg",
-      quote: "Dream Consultancy helped me secure a 50% scholarship at Cardiff University. Their scholarship guidance service is top-notch, and I'm grateful for their support.",
+      quote: "Dream Edge helped me secure a 50% scholarship at Cardiff University. Their team identified the right funding opportunities and guided me through the entire scholarship application process. I'm grateful for their expert support!",
       program: "MSc Computer Science",
-      university: "Cardiff University",
+      university: "Cardiff University, UK",
       category: "Scholarship Guidance",
+      status: "published"
+    },
+    {
+      name: "Priya Gurung",
+      photo_url: "https://randomuser.me/api/portraits/women/28.jpg",
+      quote: "Dream Edge made my dream of studying in Australia come true! They helped me choose the right university, prepare my application, and navigate the student visa process. I'm now studying at the University of Melbourne.",
+      program: "Bachelor of Commerce",
+      university: "University of Melbourne, Australia",
+      category: "University Application",
+      status: "published"
+    },
+    {
+      name: "Suraj Thapa",
+      photo_url: "https://randomuser.me/api/portraits/men/67.jpg",
+      quote: "Thanks to Dream Edge, I'm now studying in Canada! Their guidance on the study permit application was thorough and their support throughout the process gave me confidence. Highly recommend for anyone planning to study abroad.",
+      program: "Diploma in Business Administration",
+      university: "Seneca College, Canada",
+      category: "Visa Guidance",
+      status: "published"
+    },
+    {
+      name: "Kritika Adhikari",
+      photo_url: "https://randomuser.me/api/portraits/women/54.jpg",
+      quote: "Dream Edge guided me through my application to universities in the USA. Their expertise in the US admission process and SAT preparation helped me get accepted to my dream university with a scholarship!",
+      program: "BS Computer Science",
+      university: "University of California, USA",
+      category: "University Application",
       status: "published"
     }
   ];
@@ -230,25 +257,25 @@ const seedHomepageProcessSteps = async () => {
     {
       step_number: 1,
       title: "Initial Consultation & Profile Assessment",
-      description: "We start with a detailed discussion to understand your academic background, career aspirations, financial standing, and preferred study destinations. This helps us create a tailored plan for you.",
+      description: "We start with a detailed discussion to understand your academic background, career aspirations, financial standing, and preferred study destinations among USA, UK, Canada, Australia, Europe, New Zealand, or Japan. This helps us create a tailored study abroad plan for you.",
       icon_name: "users"
     },
     {
       step_number: 2,
       title: "University & Course Selection",
-      description: "Based on your profile, we provide a shortlist of suitable universities and courses that match your goals. We guide you through prospectuses, entry requirements, and campus life for various countries.",
+      description: "Based on your profile, we shortlist suitable universities and courses across USA, UK, Canada, Australia, Europe, New Zealand, and Japan that match your goals. We guide you through prospectuses, entry requirements, and campus life for each destination.",
       icon_name: "search"
     },
     {
       step_number: 3,
       title: "Application Submission & Offer Acceptance",
-      description: "We assist in meticulously preparing and submitting your applications, ensuring all documents are in order. Once offers are received, we help you choose the best one from your international options.",
+      description: "We assist in meticulously preparing and submitting applications to universities worldwide, ensuring all documents meet country-specific requirements. Once offers are received from universities in your chosen destination, we help you make the best decision.",
       icon_name: "file-check"
     },
     {
       step_number: 4,
       title: "Visa Guidance & Pre-Departure Support",
-      description: "Our experts provide comprehensive support for your student visa application for your chosen country, including documentation and interview preparation. We also offer pre-departure briefings to ensure a smooth transition.",
+      description: "Our experts provide comprehensive student visa support for USA, UK, Canada, Australia, Europe, New Zealand, or Japan, including country-specific documentation and interview preparation. We also offer pre-departure briefings covering accommodation, banking, and cultural adaptation for your destination.",
       icon_name: "briefcase"
     }
   ];
@@ -519,34 +546,34 @@ const seedUniversities = async () => {
 const seedSiteSettings = async () => {
   const settings = {
     id: 1,
-    site_name: "Dream Consultancy",
+    site_name: "Dream Edge",
     primary_phone: "+977-1-4412345",
-    primary_email: "info@dreamconsultancy.com.np",
+    primary_email: "info@dreamedge.com.np",
     primary_address_line1: "Putalisadak, Kathmandu",
-    primary_address_line2: "Opposite Kumari Bank",
-    office_hours: "Sun - Fri, 10:00 AM - 5:00 PM",
-    logo_url: "/logo/dream-consultancy-logo.png",
-    facebook_url: "https://facebook.com/dreamconsultancynepal",
-    instagram_url: "https://instagram.com/dreamconsultancynepal",
-    linkedin_url: "https://linkedin.com/company/dreamconsultancynepal",
-    twitter_url: "https://twitter.com/dreamconsultancy",
+    primary_address_line2: "Nepal",
+    office_hours: "Sun - Fri, 10:00 AM - 6:00 PM",
+    logo_url: "/logos/logo.png",
+    facebook_url: "https://facebook.com/dreamedgenepal",
+    instagram_url: "https://instagram.com/dreamedgenepal",
+    linkedin_url: "https://linkedin.com/company/dreamedgenepal",
+    twitter_url: "https://twitter.com/dreamedge",
     map_embed_url_main_office: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.47375792869!2d85.3169518150678!3d27.702700982793273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18e94f717a31%3A0x7a7b8c9f0cf31c8!2sPutalisadak%2C%20Kathmandu%2044600%2C%20Nepal!5e0!3m2!1sen!2snp!4v1627898123456",
-    footer_about_text: "Dream Consultancy is Nepal's leading educational consultancy, dedicated to helping students achieve their academic goals by providing expert guidance and support for studying internationally.",
-    copyright_year_start: 2010,
-    hero_title: "Unlock Your Global Education Dream",
-    hero_subtitle: "Your trusted partner for guidance on studying abroad. Explore top universities, courses, and scholarship opportunities worldwide.",
+    footer_about_text: "Dream Edge is Nepal's trusted overseas education consultancy, helping students study abroad in Europe, Australia, New Zealand, USA, Canada, UK & Japan. Expert guidance for university admissions, student visa assistance, and test preparation.",
+    copyright_year_start: 2015,
+    hero_title: "Study Abroad from Nepal with Dream Edge",
+    hero_subtitle: "Your trusted overseas education consultancy for Europe, Australia, New Zealand, USA, Canada, UK & Japan. Expert study abroad guidance, university admissions, and student visa assistance.",
     hero_cta_text: "Book a Free Consultation",
     hero_cta_link: "/book-consultation",
     hero_background_image_url: "/images/hero-banner-students-global.jpg",
-    why_choose_us_title: "Why Choose Dream Consultancy?",
-    why_choose_us_subtitle: "We are committed to providing ethical, professional, and personalized counseling services to help you succeed in your international education journey.",
-    proven_process_title: "Our Proven Process for Your Global Success",
-    about_hero_title: "About Dream Consultancy",
-    about_hero_subtitle: "Empowering Nepali students to achieve academic excellence worldwide since 2010.",
+    why_choose_us_title: "Why Choose Dream Edge?",
+    why_choose_us_subtitle: "Nepal's leading education consultancy for overseas studies with proven expertise in student visa assistance and university placements worldwide.",
+    proven_process_title: "Our Proven Process to Study Abroad Success",
+    about_hero_title: "About Dream Edge - Nepal's Leading Education Consultancy",
+    about_hero_subtitle: "Empowering Nepali students to achieve their dream of studying abroad in top universities worldwide.",
     about_us_story_title: "Our Story",
-    about_us_story_content: "Dream Consultancy was born from a simple yet powerful vision: to bridge the gap between talented Nepali students and world-class international education opportunities. Founded in 2010 by Rajesh Sharma, a passionate educator who had experienced firsthand the transformative power of international education, our consultancy began as a small office in Kathmandu. Over the years, we have grown into Nepal's premier education consultancy, helping thousands of students achieve their dreams of studying at prestigious institutions globally. Our growth has been fueled by the success stories and referrals of satisfied students. Today, we continue to uphold our founding principles: personalized guidance, unwavering integrity, and a genuine commitment to student success worldwide.",
+    about_us_story_content: "Dream Edge was founded with a clear mission: to make quality international education accessible to deserving Nepali students. What started as a small consultancy in Kathmandu has grown into Nepal's most trusted overseas education partner, helping thousands of students successfully navigate their journey to study in Europe, Australia, New Zealand, USA, Canada, UK, and Japan. Our experienced team of education consultants brings deep knowledge of international admission processes, visa requirements, and scholarship opportunities. We pride ourselves on providing honest, personalized guidance that puts student success first. Every success story of our students studying at prestigious universities worldwide motivates us to continue our mission of transforming dreams into reality.",
     about_us_mission_title: "Our Mission",
-    about_us_mission_content: "To empower Nepali students with the guidance, resources, and support they need to access quality international education and build successful global careers, while fostering cultural exchange and understanding.",
+    about_us_mission_content: "To empower Nepali students with comprehensive guidance, resources, and support to access quality international education in Europe, Australia, New Zealand, USA, Canada, UK & Japan, enabling them to build successful global careers.",
     about_us_vision_title: "Our Vision",
     about_us_vision_content: "To be recognized as the most trusted name in international education consultancy in Nepal, known for our ethical practices, student-centered approach, and the exceptional success of our alumni who contribute positively to society as global citizens.",
     about_us_image_url: "/about/office-placeholder.jpg"
@@ -597,6 +624,217 @@ const seedStudyInterestOptions = async () => {
   return await insertData('study_interest_options', studyInterests, 'interest_name');
 };
 
+// Seed Study Destinations - Dream Edge's target countries
+const seedStudyDestinations = async () => {
+  const destinations = [
+    {
+      country_slug: "uk",
+      display_name: "United Kingdom",
+      is_active: true,
+      display_order: 1,
+      hero_title: "Study in UK - World-Class Education from Nepal",
+      hero_subtitle: "Explore prestigious UK universities and experience rich cultural heritage while studying abroad from Nepal.",
+      overview_content: "The United Kingdom is home to some of the world's oldest and most prestigious universities. With a strong academic tradition, diverse programs, and excellent research opportunities, the UK attracts students from Nepal and around the globe. Cities like London, Edinburgh, Manchester, and Oxford offer vibrant student life alongside world-class education.",
+      why_study_here: JSON.stringify([
+        "World-renowned universities with global recognition",
+        "Shorter degree programs (1-year Master's programs)",
+        "Post-study work visa opportunities (2-3 years)",
+        "Rich cultural heritage and multicultural environment",
+        "English-speaking country with quality education system",
+        "Strong alumni networks and career prospects"
+      ]),
+      popular_courses: JSON.stringify([
+        "Business & Management",
+        "Engineering & Technology",
+        "Medicine & Healthcare",
+        "Law & Social Sciences",
+        "Computer Science & IT",
+        "Arts & Humanities"
+      ]),
+      admission_requirements: "Typically requires completion of A-levels or equivalent, IELTS 6.0-7.0 for undergraduate, and a bachelor's degree with 60%+ for postgraduate programs.",
+      visa_requirements: "Student visa (Tier 4) requires university admission offer, proof of funds (tuition + living costs for one year), tuberculosis test, and valid passport.",
+      estimated_costs: "Tuition: £10,000-£38,000/year; Living expenses: £12,000-£15,000/year in London, £9,000-£12,000 elsewhere.",
+      work_opportunities: "Students can work up to 20 hours/week during term and full-time during holidays. Post-study work visa allows 2 years (3 years for PhD) to work in the UK."
+    },
+    {
+      country_slug: "usa",
+      display_name: "United States of America",
+      is_active: true,
+      display_order: 2,
+      hero_title: "Study in USA - American Dream Education from Nepal",
+      hero_subtitle: "Access world-leading universities and cutting-edge research opportunities in the land of innovation.",
+      overview_content: "The United States offers unparalleled opportunities for higher education with its flexible curriculum, diverse campus culture, and emphasis on research and innovation. With thousands of universities and programs, students from Nepal can find the perfect fit for their academic and career goals. The USA is known for its technology hubs, business schools, and vibrant campus life.",
+      why_study_here: JSON.stringify([
+        "Home to many of the world's top-ranked universities",
+        "Flexible education system with diverse course options",
+        "Strong emphasis on research and practical learning",
+        "Optional Practical Training (OPT) work opportunities",
+        "Diverse cultural experience and networking opportunities",
+        "State-of-the-art facilities and resources"
+      ]),
+      popular_courses: JSON.stringify([
+        "Computer Science & Engineering",
+        "Business Administration (MBA)",
+        "Data Science & Analytics",
+        "Medicine & Healthcare",
+        "Biotechnology & Life Sciences",
+        "Liberal Arts & Sciences"
+      ]),
+      admission_requirements: "Requires high school diploma with good grades, SAT/ACT for undergrad, GRE/GMAT for postgrad, TOEFL/IELTS (minimum 79-100 iBT), letters of recommendation, and statement of purpose.",
+      visa_requirements: "F-1 student visa requires university I-20 form, SEVIS fee payment, visa interview, proof of financial support, and valid passport.",
+      estimated_costs: "Tuition: $20,000-$70,000/year depending on institution; Living expenses: $10,000-$18,000/year.",
+      work_opportunities: "On-campus work up to 20 hours/week. Optional Practical Training (OPT) allows 12 months work, extendable to 36 months for STEM graduates."
+    },
+    {
+      country_slug: "canada",
+      display_name: "Canada",
+      is_active: true,
+      display_order: 3,
+      hero_title: "Study in Canada - Quality Education & Immigration Pathways",
+      hero_subtitle: "Experience affordable world-class education with excellent post-study work and immigration opportunities for Nepali students.",
+      overview_content: "Canada is one of the most popular study destinations for Nepali students, offering high-quality education at affordable costs, a welcoming multicultural society, and excellent immigration pathways. Canadian universities are known for their research excellence and industry connections. With safe cities, beautiful landscapes, and a high standard of living, Canada provides an ideal environment for international students.",
+      why_study_here: JSON.stringify([
+        "Affordable tuition fees compared to USA/UK",
+        "Excellent post-graduation work permit (up to 3 years)",
+        "Clear pathways to permanent residency",
+        "Welcoming and safe multicultural society",
+        "High-quality education with global recognition",
+        "Co-op and internship opportunities in many programs"
+      ]),
+      popular_courses: JSON.stringify([
+        "Computer Science & IT",
+        "Engineering (Civil, Mechanical, Electrical)",
+        "Business & Management",
+        "Healthcare & Nursing",
+        "Hospitality & Tourism Management",
+        "Environmental Sciences"
+      ]),
+      admission_requirements: "High school completion with 60%+, IELTS 6.0-6.5 for diploma/undergraduate, bachelor's degree with 60%+ for postgraduate, IELTS 6.5-7.0.",
+      visa_requirements: "Study permit requires university acceptance letter, proof of funds (CAD $10,000+ for living expenses plus tuition), medical exam, and valid passport.",
+      estimated_costs: "Tuition: CAD $15,000-$35,000/year; Living expenses: CAD $10,000-$15,000/year.",
+      work_opportunities: "Work up to 20 hours/week during studies, full-time during breaks. Post-Graduation Work Permit (PGWP) offers 1-3 years work authorization."
+    },
+    {
+      country_slug: "australia",
+      display_name: "Australia",
+      is_active: true,
+      display_order: 4,
+      hero_title: "Study in Australia - World-Class Education Down Under",
+      hero_subtitle: "Discover innovative education, beautiful landscapes, and excellent career opportunities for Nepali students.",
+      overview_content: "Australia offers world-class education with a practical, research-focused approach. Known for its high quality of life, beautiful weather, and multicultural cities, Australia attracts thousands of Nepali students every year. With strong industries in mining, healthcare, IT, and business, Australia provides excellent post-study employment opportunities and pathways to permanent residency.",
+      why_study_here: JSON.stringify([
+        "Top-quality universities with global reputation",
+        "Post-study work rights (2-4 years)",
+        "Opportunities for permanent residency",
+        "Safe and multicultural environment",
+        "Beautiful climate and outdoor lifestyle",
+        "Strong job market in key industries"
+      ]),
+      popular_courses: JSON.stringify([
+        "Engineering & Mining",
+        "Business & Accounting",
+        "Information Technology",
+        "Nursing & Healthcare",
+        "Hospitality & Culinary Arts",
+        "Environmental Sciences"
+      ]),
+      admission_requirements: "Completion of 12 years education with 60%+, IELTS 6.0-6.5 for undergraduate, bachelor's degree for postgraduate with IELTS 6.5-7.0.",
+      visa_requirements: "Subclass 500 student visa requires Confirmation of Enrollment (CoE), Overseas Student Health Cover (OSHC), proof of funds (AUD $21,041/year), GTE statement.",
+      estimated_costs: "Tuition: AUD $20,000-$45,000/year; Living expenses: AUD $21,000-$26,000/year.",
+      work_opportunities: "Work up to 48 hours fortnightly during studies, unlimited during breaks. Temporary Graduate visa (subclass 485) offers 2-4 years post-study work rights."
+    },
+    {
+      country_slug: "new-zealand",
+      display_name: "New Zealand",
+      is_active: true,
+      display_order: 5,
+      hero_title: "Study in New Zealand - Innovation & Natural Beauty",
+      hero_subtitle: "Experience world-class education in a stunning natural environment with excellent student support.",
+      overview_content: "New Zealand offers high-quality education in a safe, welcoming environment with breathtaking natural beauty. Known for its research-led teaching, practical approach to learning, and strong support for international students, New Zealand is an excellent choice for Nepali students. With a focus on innovation, sustainability, and work-life balance, New Zealand provides a unique study abroad experience.",
+      why_study_here: JSON.stringify([
+        "High-quality education with research focus",
+        "Safe and friendly environment",
+        "Post-study work visa opportunities (up to 3 years)",
+        "Stunning natural landscapes and outdoor activities",
+        "Smaller class sizes and personalized attention",
+        "Pathways to permanent residency"
+      ]),
+      popular_courses: JSON.stringify([
+        "Agriculture & Horticulture",
+        "Information Technology",
+        "Business & Tourism Management",
+        "Engineering",
+        "Healthcare & Nursing",
+        "Environmental Studies"
+      ]),
+      admission_requirements: "Completion of 12 years education, IELTS 6.0 for diploma/undergraduate, bachelor's degree for postgraduate with IELTS 6.5.",
+      visa_requirements: "Student visa requires university offer, proof of funds (NZD $15,000/year), medical certificate, police clearance, and valid passport.",
+      estimated_costs: "Tuition: NZD $22,000-$32,000/year; Living expenses: NZD $15,000-$18,000/year.",
+      work_opportunities: "Work up to 20 hours/week during semester, full-time during holidays. Post-study work visa offers 1-3 years depending on qualification level."
+    },
+    {
+      country_slug: "europe",
+      display_name: "Europe",
+      is_active: true,
+      display_order: 6,
+      hero_title: "Study in Europe - Diverse Cultures & Affordable Education",
+      hero_subtitle: "Explore world-renowned universities across Germany, France, Netherlands, and other European countries.",
+      overview_content: "Europe offers diverse educational opportunities across numerous countries, many with low or no tuition fees at public universities. From the engineering excellence of Germany to the business schools of France and the liberal education system of the Netherlands, Europe provides high-quality education, rich cultural experiences, and excellent travel opportunities. Many programs are now offered in English, making Europe increasingly accessible to international students from Nepal.",
+      why_study_here: JSON.stringify([
+        "Low or no tuition fees in many countries (Germany, Norway, Austria)",
+        "High-quality education with global recognition",
+        "Schengen visa allows travel across 27 countries",
+        "Rich cultural heritage and diverse experiences",
+        "Growing number of English-taught programs",
+        "Post-study work opportunities in many countries"
+      ]),
+      popular_courses: JSON.stringify([
+        "Engineering (especially in Germany)",
+        "Business & Management",
+        "Computer Science & Data Science",
+        "Arts & Design",
+        "Renewable Energy & Sustainability",
+        "International Relations"
+      ]),
+      admission_requirements: "Requirements vary by country. Generally requires 12 years education, IELTS/TOEFL for English programs (6.0-6.5), motivational letter, and previous degree for masters.",
+      visa_requirements: "Student visa/residence permit requirements vary by country. Generally requires university admission, proof of funds (€8,000-€11,000/year), health insurance, and accommodation proof.",
+      estimated_costs: "Tuition: €0-€20,000/year (varies greatly); Living expenses: €800-€1,200/month depending on country and city.",
+      work_opportunities: "Work rights vary by country. Germany allows 120 full days or 240 half days per year. Most countries offer 18-24 months post-study work visa."
+    },
+    {
+      country_slug: "japan",
+      display_name: "Japan",
+      is_active: true,
+      display_order: 7,
+      hero_title: "Study in Japan - Technology, Culture & Innovation",
+      hero_subtitle: "Experience cutting-edge technology education and unique cultural immersion in the Land of the Rising Sun.",
+      overview_content: "Japan offers a unique blend of ancient traditions and modern innovation, with world-leading universities in technology, engineering, and robotics. The Japanese government actively welcomes international students through scholarships and support programs. Studying in Japan provides not only excellent education but also the opportunity to learn Japanese language and culture, opening doors to careers in Japanese corporations worldwide.",
+      why_study_here: JSON.stringify([
+        "World-leading technology and engineering programs",
+        "MEXT and other generous scholarship opportunities",
+        "Safe, clean, and efficient society",
+        "Unique cultural experience and language learning",
+        "Opportunities in Japanese global corporations",
+        "Advanced research facilities and innovation hubs"
+      ]),
+      popular_courses: JSON.stringify([
+        "Robotics & Automation",
+        "Computer Science & AI",
+        "Engineering (Mechanical, Electrical, Civil)",
+        "Business & International Relations",
+        "Japanese Language & Culture",
+        "Biotechnology & Life Sciences"
+      ]),
+      admission_requirements: "High school completion, entrance exam (EJU for undergrad), bachelor's degree for postgraduate, Japanese language proficiency (JLPT N2-N3) or English (TOEFL 79+) depending on program.",
+      visa_requirements: "Student visa requires Certificate of Eligibility (CoE) from university, proof of financial support (¥1.2-1.5 million/year), valid passport, and health certificate.",
+      estimated_costs: "Tuition: ¥535,800-¥1,000,000/year (public universities); Living expenses: ¥100,000-¥150,000/month including accommodation.",
+      work_opportunities: "Part-time work up to 28 hours/week with permission. Post-study designated activities visa offers 6-12 months for job hunting, then work visa upon employment."
+    }
+  ];
+  
+  return await insertData('study_destination_details', destinations, 'country_slug');
+};
+
 // Main seed function
 export const seedDatabase = async () => {
   let allSuccessful = true;
@@ -613,6 +851,7 @@ export const seedDatabase = async () => {
   if (!await seedEducationLevelOptions()) allSuccessful = false;
   if (!await seedStudyInterestOptions()) allSuccessful = false;
   if (!await seedHomepageProcessSteps()) allSuccessful = false;
+  if (!await seedStudyDestinations()) allSuccessful = false;
 
   if (allSuccessful) {
     console.log("Database seeding completed successfully.");

@@ -155,15 +155,15 @@ export default function Home() {
     );
   }
   
-  const heroTitle = siteSettings?.hero_title || "Unlock Your Global Education Dream";
-  const heroSubtitle = siteSettings?.hero_subtitle || "Expert guidance for your journey to studying internationally.";
+  const heroTitle = siteSettings?.hero_title || "Study Abroad from Nepal with Dream Edge";
+  const heroSubtitle = siteSettings?.hero_subtitle || "Your trusted overseas education consultancy for Europe, Australia, New Zealand, USA, Canada, UK & Japan. Expert study abroad guidance, university admissions, and student visa assistance.";
   const heroCtaText = siteSettings?.hero_cta_text || "Book a Free Consultation";
   const heroCtaLink = siteSettings?.hero_cta_link || "/book-consultation";
   const heroBgImageUrl = siteSettings?.hero_background_image_url || null;
 
-  const whyChooseUsTitle = siteSettings?.why_choose_us_title || "Why Choose Us?";
-  const whyChooseUsSubtitle = siteSettings?.why_choose_us_subtitle || "Your dedicated partners in achieving academic and career success.";
-  const provenProcessTitle = siteSettings?.proven_process_title || "Our Proven Process to Success";
+  const whyChooseUsTitle = siteSettings?.why_choose_us_title || "Why Choose Dream Edge?";
+  const whyChooseUsSubtitle = siteSettings?.why_choose_us_subtitle || "Nepal's leading education consultancy for overseas studies with proven expertise in student visa assistance and university placements.";
+  const provenProcessTitle = siteSettings?.proven_process_title || "Our Proven Process to Study Abroad Success";
 
   return (
     <div className="bg-white">
@@ -244,9 +244,9 @@ export default function Home() {
               <div className="icon-circle mb-4">
                 <AcademicCapIcon className="w-5 h-5" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-brand-primary-600">University Application Assistance</h3>
+              <h3 className="text-xl font-semibold mb-2 text-brand-primary-600">University Application & Admission Guidance</h3>
               <p className="text-body-light mb-4">
-                Get expert guidance through every step of the university application process. We help you select suitable institutions, prepare documents, and craft compelling personal statements to maximize your acceptance chances.
+                Comprehensive study abroad assistance from Nepal's trusted education consultancy. We guide you through university selection, application preparation, document verification, and admission procedures for top universities in USA, UK, Canada, Australia, Europe, New Zealand & Japan.
               </p>
               <Link href="/services/university-application" className="inline-flex items-center text-brand-accent font-medium hover:text-brand-accent-600 transition-colors">
                 Learn more <ChevronRightIcon className="ml-1 w-5 h-5" />
@@ -261,9 +261,9 @@ export default function Home() {
               <div className="icon-circle-accent mb-4">
                 <FileCheckIcon className="w-5 h-5" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-brand-accent">Visa Consultancy</h3>
+              <h3 className="text-xl font-semibold mb-2 text-brand-accent">Student Visa Assistance & Processing</h3>
               <p className="text-body-light mb-4">
-                Expert support for your visa application journey. We guide you through requirements, documentation, and interview preparation for a smooth process.
+                Professional student visa assistance for all major study destinations. Our experienced visa consultants provide complete support for visa documentation, application processing, interview preparation, and follow-ups for USA, UK, Canada, Australia, Europe, New Zealand & Japan student visas.
               </p>
               <Link href="/services/visa-consultancy" className="inline-flex items-center text-brand-accent font-medium hover:text-brand-accent-600 transition-colors">
                 Learn more <ChevronRightIcon className="ml-1 w-5 h-5" />
@@ -278,9 +278,9 @@ export default function Home() {
               <div className="icon-circle mb-4">
                 <LightBulbIcon className="w-5 h-5" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 text-brand-primary-600">Scholarship Guidance</h3>
+              <h3 className="text-xl font-semibold mb-2 text-brand-primary-600">Scholarship & Financial Aid Guidance</h3>
               <p className="text-body-light mb-4">
-                Navigate the complex world of scholarships with our expert guidance. We help you identify opportunities, prepare applications, and understand eligibility to fund your international education.
+                Expert scholarship guidance for international students from Nepal. We help identify scholarship opportunities, prepare strong applications, and maximize financial aid for your overseas education in top universities worldwide.
               </p>
               <Link href="/services/scholarship-guidance" className="inline-flex items-center text-brand-accent font-medium hover:text-brand-accent-600 transition-colors">
                 Learn more <ChevronRightIcon className="ml-1 w-5 h-5" />
@@ -318,10 +318,10 @@ export default function Home() {
       <section className="section-padding section-alt">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="heading-lg mb-4">Explore Top Universities</h2>
+            <h2 className="heading-lg mb-4">Explore Top Universities Worldwide</h2>
             <p className="text-lg text-body-light max-w-3xl mx-auto">
-              Explore top universities in popular study destinations. Our partner institutions 
-              offer quality education and global recognition.
+              Discover world-class universities across USA, UK, Canada, Australia, Europe, New Zealand & Japan. 
+              Our partner institutions offer quality education, global recognition, and excellent career prospects for international students from Nepal.
             </p>
           </div>
 
@@ -373,10 +373,10 @@ export default function Home() {
       <section className="section-padding bg-white border-t border-gray-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="heading-lg mb-4">Ace Your Admission Tests</h2>
+            <h2 className="heading-lg mb-4">IELTS, PTE & TOEFL Test Preparation</h2>
             <p className="text-lg text-body-light max-w-3xl mx-auto">
-              Prepare for internationally recognized exams with our specialized training 
-              programs designed to help you score high.
+              Achieve your target scores with expert-led test preparation courses in Nepal. 
+              Our specialized IELTS, PTE, and TOEFL training programs help you meet university admission requirements for studying abroad.
             </p>
           </div>
 
@@ -409,9 +409,9 @@ export default function Home() {
       <section className="section-padding section-alt">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="heading-lg mb-4">Stories of Success</h2>
+            <h2 className="heading-lg mb-4">Success Stories from Nepali Students</h2>
             <p className="text-lg text-body-light max-w-3xl mx-auto">
-              Hear from students who embarked on their educational journey with Dream Consultancy.
+              Hear from Nepali students who successfully achieved their dream of studying abroad with Dream Edge's overseas education consultancy services.
             </p>
           </div>
 
@@ -447,9 +447,9 @@ export default function Home() {
       {/* Call To Action */}
       <section className="section-padding bg-white border-t border-gray-100">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="heading-lg mb-6">Ready to Start Your Adventure?</h2>
+          <h2 className="heading-lg mb-6">Ready to Study Abroad from Nepal?</h2>
           <p className="text-lg text-body-light mb-8 max-w-2xl mx-auto">
-            Your dream of studying abroad is closer than you think. Let's make it happen together.
+            Your dream of overseas education is within reach. Connect with Nepal's leading education consultancy for expert guidance on studying in Europe, Australia, New Zealand, USA, Canada, UK & Japan.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/contact" className="btn-primary shadow-md">

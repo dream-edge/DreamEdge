@@ -97,8 +97,8 @@ export default function AboutUs() {
             initial="initial"
             animate="animate"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">{settings.about_hero_title || "About Dream Consultancy"}</h1>
-            <p className="text-lg md:text-xl">{settings.about_hero_subtitle || "Empowering students to achieve academic excellence."}</p>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">{settings.about_hero_title || "About Dream Edge - Nepal's Leading Education Consultancy"}</h1>
+            <p className="text-lg md:text-xl">{settings.about_hero_subtitle || "Empowering Nepali students to achieve their dream of studying abroad in top universities worldwide."}</p>
           </motion.div>
         </div>
       </section>
@@ -135,7 +135,7 @@ export default function AboutUs() {
             >
               <Image
                 src={settings.about_us_image_url || "/about/office-placeholder.jpg"}
-                alt="Dream Consultancy Office"
+                alt="Dream Edge Education Consultancy Office"
                 fill
                 style={{ objectFit: "cover" }}
                 className="rounded-lg shadow-xl"
